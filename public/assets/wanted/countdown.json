@@ -1,0 +1,83 @@
+{
+	"textures": [
+		{
+			"image": "countdown.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 170,
+				"h": 166
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 164
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 65,
+						"h": 164
+					}
+				},
+				{
+					"filename": "3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 164
+					},
+					"frame": {
+						"x": 68,
+						"y": 1,
+						"w": 56,
+						"h": 164
+					}
+				},
+				{
+					"filename": "1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 164
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 164
+					},
+					"frame": {
+						"x": 126,
+						"y": 1,
+						"w": 43,
+						"h": 164
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:deab24faf4cb6b9b4d6308e1a54f40b1:8772111866a60d8360de186b12b3c52d:d7632b2ef722b276a9b266ab897c133e$"
+	}
+}

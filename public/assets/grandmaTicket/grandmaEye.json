@@ -1,0 +1,62 @@
+{
+	"textures": [
+		{
+			"image": "grandmaEye.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 92,
+				"h": 36
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "eye1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 90,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 90,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 90,
+						"h": 26
+					}
+				},
+				{
+					"filename": "eye0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 90,
+						"h": 6
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 90,
+						"h": 6
+					},
+					"frame": {
+						"x": 1,
+						"y": 29,
+						"w": 90,
+						"h": 6
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ce6f5e8f9e47e6164ff4b6f372f3117d:010767410f6c845b324e61236fe5335d:8aa11933529961b16d023e912b82dc60$"
+	}
+}
