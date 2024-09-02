@@ -8,7 +8,8 @@ export class SceneBoot extends Phaser.Scene {
   }
   create() {
     this.sound.play('bgm', { volume: 0.5, loop: true })
-    const audioEnable: number = this.sound.get('bgm').config.volume
+    // @ts-ignore
+    const audioEnable: number = this.sound.get('bgm').config.volume 
     const styleBtnText = {
       font: 'bold 45px Kanit',
       fill: '#900a21',
