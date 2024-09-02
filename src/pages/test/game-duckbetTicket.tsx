@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
 const DuckbetTicket = dynamic(
@@ -8,5 +9,12 @@ const DuckbetTicket = dynamic(
 )
 
 export default function Phaser() {
-  return <DuckbetTicket />
+  return (
+    <div>
+      <Link href='/' target='_blank' rel='noopener noreferrer'>
+        home
+      </Link>
+      <DuckbetTicket />
+    </div>
+  )
 }

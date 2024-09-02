@@ -20,7 +20,7 @@ const config: Phaser.Types.Core.GameConfig = {
   transparent: true,
   backgroundColor: '#000000',
   loader: {
-    baseURL: '/assets/pirateTreasure/',
+    baseURL: '/assets/defuseFrenzy/',
   },
   audio: {
     disableWebAudio: true,

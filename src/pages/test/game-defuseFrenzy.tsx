@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 const PirateTreasure = dynamic(
   () => {
@@ -8,5 +9,12 @@ const PirateTreasure = dynamic(
 )
 
 export default function Phaser() {
-  return <PirateTreasure />
+  return (
+    <div>
+      <Link href='/' replace>
+        back
+      </Link>
+      <PirateTreasure />
+    </div>
+  )
 }

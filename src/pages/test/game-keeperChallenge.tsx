@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
 const KeeperChallenge = dynamic(
@@ -8,5 +9,12 @@ const KeeperChallenge = dynamic(
 )
 
 export default function Phaser() {
-  return <KeeperChallenge />
+  return (
+    <div>
+      <Link href='/' target='_blank' rel='noopener noreferrer'>
+        home
+      </Link>
+      <KeeperChallenge />
+    </div>
+  )
 }

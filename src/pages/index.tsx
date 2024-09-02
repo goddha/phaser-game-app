@@ -10,30 +10,33 @@ const LinkEdit = styled(Link)`
 `
 const IMG = styled.img`
   margin: 20px;
-  max-width: 300px;
-  min-height: 150px;
+  /* max-width: 300px; */
+  /* min-height: 150px; */
+  height: 150px;
+  width: 250px;
   object-fit: contain;
 `
 const Main = styled.div`
-  html,
-  body,
-  #app {
-    margin: 0px;
-    padding: 0px;
-  }
-  ,
-  #app > div {
-    /* height: 100%; */
-  }
-  background-color: black;
-  /* min-height: 100vh; */
-  /* min-width: 100vw; */
-  font-size: 30px;
+  /* #app, */
+  /* html, */
+  /* body, */
+  margin: 0px;
+  font-size: 20px;
+  height: 100vh;
+  color: black;
   font-family: 'Kanit';
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #015c68, 0 0 30px #015c68, 0 0 40px #015c68, 0 0 50px #015c68, 0 0 60px #015c68;
+    }
+    to {
+      box-shadow: 0 0 10px #fff, 0 0 20px #b0f0f8, 0 0 30px #b0f0f8, 0 0 40px #b0f0f8, 0 0 50px #b0f0f8, 0 0 60px #b0f0f8, 0 0 70px #b0f0f8;
+    }
+  }
 `
 const Text = styled.div`
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   padding: 5px;
 `
 const ShowDiv = styled.div`
@@ -66,18 +69,11 @@ const ShowDiv = styled.div`
     }
   }
 `
+
 const GameBtn = styled.div`
-  @keyframes glow {
-    from {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #015c68, 0 0 30px #015c68, 0 0 40px #015c68, 0 0 50px #015c68, 0 0 60px #015c68;
-    }
-    to {
-      box-shadow: 0 0 10px #fff, 0 0 20px #b0f0f8, 0 0 30px #b0f0f8, 0 0 40px #b0f0f8, 0 0 50px #b0f0f8, 0 0 60px #b0f0f8, 0 0 70px #b0f0f8;
-    }
-  }
   font-size: clamp(20px, 1.5vw, 35px);
   text-transform: capitalize;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,30 +85,50 @@ const GameBtn = styled.div`
   height: 300px;
   box-shadow: 1px -1px 5px 1px #a7eff8;
 `
+const FooterDiv = styled.div`
+  text-align: right;
+  font-size: 12px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* font-family: 'Kanit'; */
+  > p {
+    margin: 0;
+    padding-right: 5px;
+  }
+`
 const gameList = ['duckbetTicket', 'easyPuzzle', 'grandmaTicket', 'keeperChallenge', 'wanted', 'pirateTreasure']
 export default function App() {
   return (
     <Main>
-      <Text>Ready</Text>
+      <Text>just some games with plenty of bugs </Text>
       <ShowDiv>
         {gameList.map((game, index) => {
           return (
             <LinkEdit key={index} href={`/test/game-${game}`}>
-              <GameBtn>
-                <IMG src={`../assets/${game}/logo.png`} />
-                {game}
-              </GameBtn>
+              {/* <GameBtn> */}
+              <IMG src={`../assets/${game}/logo.png`} />
+              {/* {game} */}
+              {/* </GameBtn> */}
             </LinkEdit>
           )
         })}
       </ShowDiv>
-      <Text>Next</Text>
-      <ShowDiv>
-        <GameBtn className='upcoming'>
-          <IMG src={`/assets/global/duckbetLogoWhite.png`} />
-          DefuzeFrenzy
-        </GameBtn>
-      </ShowDiv>
+      <FooterDiv>
+        <p>Version 0.00001</p>
+        <p>first build 1 sep 2024</p>
+        <p>this personal project is bug-free ( It give you plenty of bugs for free !! )</p>
+      </FooterDiv>
     </Main>
+    // <div style={{ margin: 0 }}>asdasd</div>
   )
+}
+{
+  /* <Text>Next</Text>
+<ShowDiv>
+  <GameBtn className='upcoming'>
+    <IMG src={`/assets/global/duckbetLogoWhite.png`} />
+    DefuzeFrenzy
+  </GameBtn>
+</ShowDiv> */
 }

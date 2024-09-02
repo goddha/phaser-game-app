@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
 const EasyPuzzle = dynamic(
@@ -8,5 +9,12 @@ const EasyPuzzle = dynamic(
 )
 
 export default function Phaser() {
-  return <EasyPuzzle />
+  return (
+    <div>
+      <Link href='/' target='_blank' rel='noopener noreferrer'>
+        home
+      </Link>
+      <EasyPuzzle />
+    </div>
+  )
 }

@@ -39,6 +39,14 @@ const config: Phaser.Types.Core.GameConfig = {
     height: 720,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
+  min:{
+    width: 800,
+    height: 450,
+  },
+  max:{
+    width: 1600,
+    height: 900,
+  },
   dom: {
     createContainer: true,
   },

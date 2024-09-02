@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
 const GrandmaTicket = dynamic(
@@ -8,5 +9,12 @@ const GrandmaTicket = dynamic(
 )
 
 export default function Phaser() {
-  return <GrandmaTicket />
+  return (
+    <div>
+      <Link href='/' target='_blank' rel='noopener noreferrer'>
+        home
+      </Link>
+      <GrandmaTicket />
+    </div>
+  )
 }
