@@ -10,8 +10,6 @@ const LinkEdit = styled(Link)`
 `
 const IMG = styled.img`
   margin: 20px;
-  /* max-width: 300px; */
-  /* min-height: 150px; */
   height: 150px;
   width: 250px;
   object-fit: contain;
@@ -87,14 +85,17 @@ const GameBtn = styled.div`
 `
 const FooterDiv = styled.div`
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
   /* font-family: 'Kanit'; */
+  /* padding-right: 10px; */
+  > a {
+    font-size: 20px;
+  }
   > p {
     margin: 0;
-    padding-right: 5px;
   }
 `
 const gameList = ['duckbetTicket', 'easyPuzzle', 'grandmaTicket', 'keeperChallenge', 'wanted', 'pirateTreasure']
@@ -115,8 +116,10 @@ export default function App() {
         })}
       </ShowDiv>
       <FooterDiv>
-        <p>Version 0.00001</p>
-        <p>first build 1 sep 2024</p>
+        <p>first build 2 sep 24</p>
+        <p>
+          get this repo on <a href='https://github.com/goddha/phaser-game-app'>github</a>
+        </p>
         <p>this personal project is bug-free ( It give you plenty of bugs for free !! )</p>
       </FooterDiv>
     </Main>
