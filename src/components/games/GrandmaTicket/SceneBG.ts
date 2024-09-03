@@ -67,8 +67,8 @@ export class SceneBG extends Phaser.Scene {
     })
   }
 
-  // create() {
-  //   this.add.image(1280 / 2, 720 / 2, 'bgPlay')
-  //   this.scene.start('bootScene')
-  // }
+  create() {
+    this.add.image(1280 / 2, 720 / 2, 'bgPlay')
+    this.scene.start('bootScene')
+  }
 }
