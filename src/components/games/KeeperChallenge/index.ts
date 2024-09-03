@@ -5,6 +5,7 @@ import { SceneBG } from './SceneBG'
 import { Scene2 } from './Scene2'
 import { Scene3 } from './Scene3'
 import { SceneHowTo } from './SceneHowTo'
+import gameSettings from '../GlobalComponents/gameSettings'
 
 export default function PhaserIndex() {
   return null
@@ -13,16 +14,9 @@ export default function PhaserIndex() {
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   parent: 'root',
-  width: 1280,
-  height: 720,
   scene: [SceneBG, Scene3, Scene1, Scene2, SceneHowTo],
-  transparent: true,
-  backgroundColor: '#000000',
   loader: {
     baseURL: '/assets/keeperChallenge/',
-  },
-  audio: {
-    disableWebAudio: true,
   },
   plugins: {
     global: [
@@ -39,14 +33,7 @@ const config: Phaser.Types.Core.GameConfig = {
     height: 720,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  min:{
-    width: 800,
-    height: 450,
-  },
-  max:{
-    width: 1600,
-    height: 900,
-  },
+  ...gameSettings,
   dom: {
     createContainer: true,
   },

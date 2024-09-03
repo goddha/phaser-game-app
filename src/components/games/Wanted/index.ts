@@ -4,6 +4,7 @@ import { SceneBoot } from './SceneBoot'
 import { SceneBet } from './SceneBet'
 import { SceneResult } from './SceneResult'
 import { SceneHowTo } from './SceneHowTo'
+import gameSettings from '../GlobalComponents/gameSettings'
 
 export default function PhaserIndex() {
   return null
@@ -12,9 +13,7 @@ export default function PhaserIndex() {
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.WEBGL,
   parent: 'root',
-  scene: [SceneBG, SceneBoot, SceneBet, SceneResult, SceneHowTo],
-  transparent: true,
-  backgroundColor: '#000',
+  scene: [SceneBG, SceneBoot, SceneBet, SceneResult, SceneHowTo],  
   loader: {
     baseURL: '/assets/wanted/',
   },
@@ -24,16 +23,7 @@ const config: Phaser.Types.Core.GameConfig = {
     height: 720,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  min:{
-    width: 800,
-    height: 450,
-  },
-  max:{
-    width: 1600,
-    height: 900,
-  },
-  audio: {
-    disableWebAudio: true,
-  },
+    ...gameSettings
+  
 }
 new Phaser.Game(config)
